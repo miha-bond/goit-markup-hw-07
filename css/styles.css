@@ -900,10 +900,8 @@ display: flex;
 .socials-link-footer:focus .socials-icon-footer{fill: var(--white);}
 
 
-.form-footer-wraper{
+.form-footer-wrap{
   margin-left: 93px;
-  margin-right: 12px;
-
 }
 .title-footer-form{
   margin-bottom: 20px;
@@ -915,6 +913,11 @@ display: flex;
   line-height: 1.14;
   color: var(--white);
 }
+
+.form-wraper-footer{
+  margin-right: 12px;
+}
+
 .form-email-footer{
   padding: 16px 12px;
   width: 358px;
