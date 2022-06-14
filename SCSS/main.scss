@@ -1,7 +1,9 @@
-@import "./variables/variabels";
 
+/*Базові стилі*/
 @import "./base/base";
-
+/*Утиліти*/
+@import "./utils/titlehidung";
+@import "./utils/variabels";
 
 /*Стилі хедера*/
 @import "./components/header/header";
@@ -16,14 +18,13 @@
 @import "./components/index/form";
 @import "./components/index/benefits";
 @import "./components/index/work";
-@import "./components/index/team";
+@import "./components/index/team/team";
 @import "./components/index/clients";
 
 
 /*Стилі сторінки Портфоліо*/
-@import "./components/portfolio/titlehidung";
 @import "./components/portfolio/filter";
-@import "./components/portfolio/portfolio";
+@import "./components/portfolio/portfolio-list/portfolio";
 
 
 /*Стилі футера*/
@@ -32,4 +33,3 @@
 @import "./components/footer/footercontact";
 @import "./components/footer/footersocial";
 @import "./components/footer/footerform";
-
