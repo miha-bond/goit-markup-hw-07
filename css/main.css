@@ -658,6 +658,7 @@ img {
 
 .clients__list-item .clients__link:hover, .clients__list-item .clients__link:focus {
   fill: var(--activ-link-but);
+  border: 1px solid var(--activ-link-but);
 }
 
 /*Стилі сторінки Портфоліо*/
@@ -921,6 +922,10 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+}
+
+.footer__form-wrap .footer__form-email:hover, .footer__form-wrap .footer__form-email:focus {
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .footer__form-wrap .footer__form-button {
