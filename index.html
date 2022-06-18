@@ -78,28 +78,28 @@
             </h2>
             <form class="form">
               <label class="form__wraper">
-                <span>Имя</span>
+                <span class="form__wraper-titel">Имя</span>
                 <input class="form__imput text" type="text" name="user" />
                 <svg class="form__icon" width="12" height="12">
                   <use href="./images/icon/icons.svg#modal-name"></use>
                 </svg>
               </label>
               <label class="form__wraper">
-                <span>Телефон</span>
+                <span class="form__wraper-titel">Телефон</span>
                 <input class="form__imput tel" type="tel" name="tel" required />
                 <svg class="form__icon" width="13" height="13">
                   <use href="./images/icon/icons.svg#modal-tel"></use>
                 </svg>
               </label>
               <label class="form__wraper">
-                <span>Почта</span>
+                <span class="form__wraper-titel">Почта</span>
                 <input class="form__imput email" type="email" name="mail" />
                 <svg class="form__icon" width="15" height="12">
                   <use href="./images/icon/icons.svg#modal-mail"></use>
                 </svg>
               </label>
               <label class="form__wraper">
-                <span>Комментарий</span>
+                <span class="form__wraper-titel">Комментарий</span>
                 <textarea
                   class="form__imput textarea"
                   name="comments"
@@ -115,13 +115,9 @@
                   required
                 />
                 <span class="form__castom-checkbox"></span>
-                <span class="form__text-consent"
-                  >Соглашаюсь с рассылкой и принимаю<a
-                    class="form__treaty-link"
-                    href=""
-                    >Условия договора</a
-                  ></span
-                >
+                <a class="form__text-consent">
+                  Соглашаюсь с рассылкой и принимаю</a
+                ><a class="form__treaty-link" href="">Условия договора</a>
               </label>
               <button class="form__button-submit" type="submit">
                 Отправить
