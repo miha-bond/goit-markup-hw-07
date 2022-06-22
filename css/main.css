@@ -321,6 +321,15 @@ img {
   line-height: 1.14;
   letter-spacing: 0.01em;
   resize: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.textarea:hover::placeholder, .textarea:focus::placeholder {
+  color: var(--activ-link-but);
+}
+.textarea:hover, .textarea:focus {
+  border: 1px solid var(--activ-link-but);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .form__checkbox-wraper {
@@ -351,13 +360,11 @@ img {
   border-radius: 3px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__castom-checkbox:hover, .form__castom-checkbox:focus {
+.form__checkbox:hover + .form__castom-checkbox, .form__checkbox:focus + .form__castom-checkbox {
   border: 2px solid var(--activ-link-but);
 }
-
 .form__checkbox:checked + .form__castom-checkbox {
   background-image: url(../images/icon/checbox-checked.svg);
-  width: 16px;
   height: 15px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -365,11 +372,13 @@ img {
   border-radius: 2px;
   border: solid var(--activ-link-but);
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 16px;
 }
 
 .form__text-consent {
   justify-content: center;
   align-items: center;
+  padding-top: 1px;
   margin-left: 8.5px;
   text-align: center;
   font-style: normal;
@@ -381,6 +390,7 @@ img {
 }
 
 .form__treaty-link {
+  padding-top: 1px;
   margin-left: 4px;
   font-weight: 400;
   font-size: 14px;
@@ -391,7 +401,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__treaty-link:hover, .form__treaty-link:focus {
-  color: #07518d;
+  color: #0f75c9;
 }
 
 .form__button-submit {
